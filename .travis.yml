@@ -4,8 +4,8 @@ services:
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_03cc6a8316d2_key -iv $encrypted_03cc6a8316d2_iv -in travis-data/fake-service-account.json.enc -out travis-data/fake-service-account.json -d
-  - curl https://sdk.cloud.google.com | bash > /dev/null;
-  - source $HOME/google-cloud-sdk/path.bash.inc
+  #- curl https://sdk.cloud.google.com | bash > /dev/null;
+  #- source $HOME/google-cloud-sdk/path.bash.inc
   # - gcloud components update kubectl
   # - gcloud auth activate-service-account --key-file travis-data/fake-service-account.json
   # - gcloud config set project 'project id'
