@@ -15,7 +15,7 @@ before_install:
   - docker build -t gianlucamori/complex-client:latest -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run gianlucamori/complex-client:latest npm run test -- --coverage
+  - docker run gianlucamori/complex-client:latest npm run test -- --watchAll=false
 
 deploy:
   provider: script
