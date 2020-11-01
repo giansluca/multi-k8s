@@ -1,0 +1,5 @@
+ 
+ run ruby container :                   docker run -it -v $(pwd):/app ruby:2.7 sh
+ install travis :                       gem install travis
+ login to travis :                      travis login
+ encrypt file :                         travis encrypt-file fake-service-account.json -r  giansluca/multi-k8s
