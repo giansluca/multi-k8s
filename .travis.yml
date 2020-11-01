@@ -16,3 +16,9 @@ before_install:
 
 script:
   - docker run gianlucamori/complex-client:latest npm run test -- --coverage
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
