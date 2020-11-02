@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: gianlucamori/complex-client
+          image: gianlucamori/multi-client
           ports:
             - containerPort: 3000
