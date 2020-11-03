@@ -3,3 +3,5 @@
  install travis :                       gem install travis
  login to travis :                      travis login
  encrypt file :                         travis encrypt-file fake-service-account.json -r  giansluca/multi-k8s
+
+ create secret :                   kubectl create secret generic pgpassword --from-literal PGPASSWORD=password12345
