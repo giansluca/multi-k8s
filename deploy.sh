@@ -10,7 +10,7 @@ docker push gianlucamori/multi-client:$GIT_SHA
 docker push gianlucamori/multi-api:$GIT_SHA
 docker push gianlucamori/multi-worker:latest:$GIT_SHA
 
-kubectl apply -f k8s/
-kubectl set image deployment/client-deployment client=gianlucamori/multi-client:$GIT_SHA
-kubectl set image deployment/api-deployment api=gianlucamori/multi-api:$GIT_SHA
-kubectl set image deployment/worker-deployment worker=gianlucamori/multi-worker:$GIT_SHA
+# kubectl apply -f k8s/
+# kubectl set image deployment/client-deployment client=gianlucamori/multi-client:$GIT_SHA
+# kubectl set image deployment/api-deployment api=gianlucamori/multi-api:$GIT_SHA
+# kubectl set image deployment/worker-deployment worker=gianlucamori/multi-worker:$GIT_SHA
