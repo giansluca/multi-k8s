@@ -11,7 +11,7 @@ before_install:
   # - gcloud config set project 'project id'
   # - gcloud config set compute/zone 'zone'
   # - gcloud container clusters get-credentials 'cluster name'
-  - echo "$DOCKER_PASSWORD" | docker login -u "DOCKER_USERNAME" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t gianlucamori/multi-client -f ./client/Dockerfile.dev ./client
 
 script:
