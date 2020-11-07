@@ -4,7 +4,7 @@
  login to travis :                      travis login
  encrypt file :                         travis encrypt-file fake-service-account.json -r  giansluca/multi-k8s
 
- create secret :                   kubectl create secret generic pgpassword --from-literal PGPASSWORD=password12345
+ create secret :                        kubectl create secret generic pgpassword --from-literal PGPASSWORD=password12345
 
  install Helm in production from script 
     - curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
