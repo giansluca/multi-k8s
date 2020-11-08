@@ -21,11 +21,24 @@ build:
       sync:
         infer:
           - "**/*.js"
+    - image: gianlucamori/multi-worker
+      context: worker
+      docker:
+        dockerfile: DockerFile.dev
+      sync:
+        infer:
+          - "**/*.js"
 deploy:
   kubectl:
     manifests:
+      - k8s/postgres-cluster-ip-service.yaml
+      - k8s/postgres-deployment.yaml
+      - k8s/database-persistent-volume-claim.yaml
       - k8s/client-deployment.yaml
       - k8s/client-cluster-ip-service.yaml
       - k8s/api-deployment.yaml
       - k8s/api-cluster-ip-service.yaml
       - k8s/ingress-service.yaml
+      - k8s/redis-cluster-ip-service.yaml
+      - k8s/redis-deployment.yaml
+      - k8s/worker-deployment.yaml
