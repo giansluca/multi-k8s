@@ -1,20 +1,95 @@
+# mac
+.DS_STORE
 
-# dependencies
-node_modules
-
-# testing
-coverage
-
-# production
-build
+# windows
+Thumbs.db
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.tgz
+*.pem
+*.lock
+info/
 
+# logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# coverage directory
+coverage/
+coverage.json
+
+# unit test reports
+TEST*.xml
+
+# npm cache directory
+.npm/
+
+# eslint cache
+.eslintcache/
+
+# dotenv
+.env
+.env.test
+
+# next.js
+.next/
+
+# serverless
+.serverless/
+
+# azure Functions artifacts
+azure-functions-core-tools/
+bin/
+obj/
+appsettings.json
+local.settings.json
+
+# hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# swagger
+swagger.json
+
+# java
+target/
+*.class
+*.jar
+*.war
+
+# python
+*.py[cod]
+**/__pycache__/
+.pytest_cache/
+
+# javascript
+node_modules/
+dist/
+
+# c / c++
+build-debug/
+build-release/
+
+# compiled binary
+build/
+
+# vscode
+.vscode/
+
+# intelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# project specific
+
